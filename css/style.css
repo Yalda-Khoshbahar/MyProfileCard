@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Baloo+Bhaijaan+2&family=Croissant+One&family=Fredoka+One&family=Grenze:wght@100&family=Gulzar&family=Inknut+Antiqua&family=Jacques+Francois+Shadow&family=Katibeh&family=Lobster+Two&family=Londrina+Outline&family=Margarine&family=Metal&family=Noto+Nastaliq+Urdu:wght@400;600&family=Oleo+Script&family=Passions+Conflict&family=Rampart+One&family=Reem+Kufi+Ink&family=Rye&family=Scheherazade+New:wght@400;700&family=Sirin+Stencil&family=Spirax&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5959f3;
+  background-image: linear-gradient(100deg, #f8cdfc, #69cccc);
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  animation-name: back;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+.profileCard {
+  width: 400px;
+  height: 580px;
+  background-color: #e6edf8;
+  padding: 40px 35px 35px 35px; 
+  border: 1px solid #78b1fb;
+  border-radius: 30px;
+  box-shadow: -3px -2px 5px #a7b3cf, 3px 6px 5px #abbbde;
+}
+
+.pictures {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  background: url("/img/profile-picture.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #cceff5;
+  border-radius: 50%;
+  box-shadow: 0.5px 1px #00000026;
+}
+
+.logo {
+  position: absolute;
+  top: 77px;
+  left: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffffc2;
+  border-radius: 100%;
+}
+
+.myName {
+  color: #0707a7;
+  font-size: 24px;
+  font-family: "Croissant One", cursive;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.myId {
+  font-size: 24px;
+  font-family: "Sirin Stencil", cursive;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.myId a {
+  color: #5959f3;
+  text-decoration: none;
+}
+
+.mySkill {
+  color: #0865c2;
+  font-size: 20px;
+  font-family: "Rampart One", cursive;
+  text-align: center;
+  margin-top: 50px;
+  animation: skil-animation 6s infinite;
+}
+
+.fields {
+  width: 50%;
+  margin: 58px auto 0;
+}
+
+.fields a {
+  text-decoration: none;
+}
+
+.fields p {
+  color: #070791;
+  background-color: #9ccaf5;
+  font-size: 27px;
+  font-family: "Katibeh", cursive;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 4px 10px 14px 8px;
+  border-radius: 70px;
+}
+
+.buttonText:hover {
+  background-image: linear-gradient(to bottom left, #e39eec, #83e0f1);
+}
+
+@keyframes back {
+  0% {
+    transition-timing-function: linear;
+    background-image: repeating-linear-gradient(350deg, #f8cdfc, #69cccc);
+  }
+  25% {
+    transition-timing-function: linear;
+    background-image: repeating-linear-gradient(110deg, #f8cdfc, #69cccc);
+  }
+  50% {
+    transition-timing-function: linear;
+    background-image: repeating-linear-gradient(170deg, #f8cdfc, #69cccc);
+    background-size: 220%;
+  }
+  75% {
+    transition-timing-function: linear;
+    background-image: repeating-linear-gradient(220deg, #f8cdfc, #69cccc);
+    background-size: 100%;
+  }
+  100% {
+    transition-timing-function: linear;
+    background-image: repeating-linear-gradient(300deg, #f8cdfc, #69cccc);
+    background-size: 180%;
+  }
+}
+
+@keyframes skil-animation {
+  0% {
+    transform: skew(20deg, 0.2deg);
+  }
+  50% {
+    transform: skew(-25deg, 1deg);
+  }
+  100% {
+    transform: skew(20deg, 0.2deg);
+  }
+}
